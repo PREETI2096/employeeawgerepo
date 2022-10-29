@@ -8,21 +8,13 @@ public class EmployeeWageMain {
 
 	public static void main(String[] args) {
 		   welcome();
-	       EmployeeWage employeewage = new EmployeeWage();
-			System.out.println("------------------------");
-			System.out.println("easybuy company");
-			System.out.println("------------------------");
-			employeewage.wage("easybuy ", 20, 23, 110);
-		
-			System.out.println("------------------------");
-			System.out.println(" Amazon company");
-			System.out.println("------------------------");
-			employeewage.wage("Amazon", 36, 28, 130);
-		
-			System.out.println("------------------------");
-			System.out.println(" boat company");
-			System.out.println("------------------------");
-			employeewage.wage("boat", 30, 26, 127);
+	       EmployeeWage easybuy = new EmployeeWage("easybuy", 20, 20 ,10);
+	     EmployeeWage reliance = new EmployeeWage("reliance", 18,24,12);
+	       easybuy.wage();
+	       System.out.println(easybuy);
+	       reliance.wage();
+	       System.out.println(reliance);
+			
 
 	}
 
