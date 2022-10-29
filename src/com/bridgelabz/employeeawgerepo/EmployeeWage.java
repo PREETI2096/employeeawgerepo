@@ -28,7 +28,7 @@ public class EmployeeWage {
 		int totalEmpHours = 0;
 		int totalWorkingDays = 0;
 		
-	    while(totalEmpHours <= 100 && totalWorkingDays < 20) {
+	    while(totalEmpHours <=maxHourPerMonth  && totalWorkingDays < numOfWorkingDays ) {
 	    	totalWorkingDays++;
 	    	
 		Random random = new Random();
@@ -53,6 +53,7 @@ public class EmployeeWage {
 		System.out.println("Day: "+totalWorkingDays+"=>" +" Emp Hours= "+ empHour);
 		}
 	    int totalEmpWage = totalEmpHours *  empRatePerHour;
+		system.out.println("Total working hours :" +totalEmpHours);
 		System.out.println("Total Employee wage:" + totalEmpWage);
 		return totalEmpWage;
 	}
